@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Prob1_Form Validation</title>
+
+  </head>
+  <body>
+  <form class="" action="index.html" method="post">
+    <h1>Problem 1: Form Validation</h1>
+    Name:  <input type="text" id="asd" maxlength="24"/><span id="errorName" style="font-weight:bold; display:inline">    </span>
+    <br><br>
+
+    Age:  <input type="number" id="age"/><span id="errorAge" style="font-weight:bold; display:inline">    </span>
+    <br><br>
+
+    Gender: <span id="errorGender" style="font-weight:bold; display:inline">    </span> <br>
+    <input type="radio" name="gender" id="female" value="female"/> Female<br>
+    <input type="radio" name="gender" id="male" value="male"/> Male<br><br>
+
+    <button type="button" onclick='isValid()'>Submit</button>
+  </form>
+
+  <script src="JavaScript/Prob1.js" charset="utf-8"></script>
+  </body>
+</html>

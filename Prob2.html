@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Prob2_Addresses</title>
+  <link rel="stylesheet" href="css/styles2.css">
+</head>
+
+<body>
+
+
+  <form class="" action="index.html" method="post">
+    <h1>Problem 2: Billing and Shipping Addresses</h1>
+    <!--a billing address (name, address, city, state, zip)-->
+    <p>Billing Address</p>
+
+    <label for="billName"> Name:</label> <input type="text" id="billName"><br />
+    <label for="billAddress">Address:</label> <input type="text" id="billAddress"><br />
+    <label for="billCity">City:</label><input type="text" id="billCity"><br />
+    <label for="billState">State:</label><input type="text" id="billState" value=""><br />
+    <label for="billZip">Zip Code:</label><input type="text" id="billZip" value=""><br />
+
+    <p>Shipping Address</p>
+    <label for="shipName"> Name:</label> <input type="text" id="shipName"><br />
+    <label for="shipAddress">Address:</label> <input type="text" id="shipAddress"><br />
+    <label for="shipCity">City:</label><input type="text" id="shipCity"><br />
+    <label for="shipState">State:</label><input type="text" id="shipState" value=""><br />
+    <label for="shipZip">Zip Code:</label><input type="text" id="shipZip" value=""><br />
+
+    <input type="checkbox" id="myCheck" onclick='isSame()'>Same as Billing Address above</input><br>
+
+    <button type="button" onclick='isValid()'>Submit</button>
+  </form>
+
+  <script src="JavaScript/Prob2.js" charset="utf-8"></script>
+</body>
+
+</html>

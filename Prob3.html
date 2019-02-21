@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+   <meta charset="utf-8">
+   <title>Prob3_Form Validation</title>
+
+ </head>
+ <body>
+ <form class="" action="index.html" method="post">
+   <h1>Problem 3: Form Validation</h1>
+   Name:  <input type="text" id="asd" maxlength="20"/><span id="errorName" style="color:red; font-weight:bold; display:inline" >    </span>
+   <br><br>
+
+   Age:  <input type="text" id="age"/><span id="errorAge" style="color:red; font-weight:bold; display:inline">    </span>
+   <br><br>
+
+   Gender: <span id="errorGender" style="color:red; font-weight:bold; display:inline">    </span> <br>
+   <input type="radio" name="gender" id="female" value="female"/> Female<br>
+   <input type="radio" name="gender" id="male" value="male"/> Male<br><br>
+
+   <button type="button" onclick='isValid()'>Submit</button>
+ </form>
+
+ <!--Added below line for jquery-->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <!--Added Below line to link JavaScript file to this html file-->
+ <script src="jQuery/Prob3.js" charset="utf-8"></script>
+ </body>
+</html>
