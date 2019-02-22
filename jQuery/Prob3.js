@@ -18,7 +18,7 @@ function validateAge() {
   if ($("#age").val() == "") {
     $("#errorAge").text("Please Enter Valid Age");
   }
-  else if($("#age").isNumeric() == false ) {
+  else if($.isNumeric($("#age").val()) == false ) { //$("#age").isNumeric()
     $("#errorAge").text("Error: Age have to be Number");
   }
   else {
